@@ -15,4 +15,4 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Making Changes and Deploying
-The `source` branch contains the actual code for the project. When changes have been made, simply do `npm run build` to get your updates up and running on the github page.
+The `source` branch contains the actual code for the project. When changes have been made in `source` , simply do `npm run build` to get your updates up and running on the github page.
