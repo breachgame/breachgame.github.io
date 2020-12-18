@@ -3,3 +3,9 @@
   justify-content: center;
   padding: 50px;
 }
+
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
