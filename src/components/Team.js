@@ -10,7 +10,7 @@ import Card from './Card'
 const team = [
   {
     name: "Christina Sonebo",
-    tasks: ["Concept Art", "Level Design", "Website"],
+    tasks: ["Game Art", "Level Design", "Website"],
     image: Christina,
   },
   {
@@ -25,7 +25,7 @@ const team = [
   },
   {
     name: "Pepi Nedkova",
-    tasks: ["UX", "Level Design"],
+    tasks: ["UX", "Level Design", "Graphic Design"],
     image: Pepi,
   },
   {

@@ -1,0 +1,16 @@
+.button-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 4rem;
+}
+
+.btn {
+  font-family: 'VT323', monospace;
+}
+
+.book {
+  margin: 50px;
+}
