@@ -1,5 +1,6 @@
 import React from 'react';
 import Unity, { UnityContext } from "react-unity-webgl";
+import '../css/demo.css'
 
 const unityContext = new UnityContext({
   loaderUrl: "Build/Breach(Export).loader.js",
@@ -9,7 +10,11 @@ const unityContext = new UnityContext({
 });
 
 const Demo = () => {
-  return <Unity unityContext={unityContext} />;
+  return(
+    <div className="unity-demo">
+      <Unity unityContext={unityContext} />
+    </div>
+  )
 }
 
 export default Demo;

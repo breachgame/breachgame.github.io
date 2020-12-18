@@ -1,0 +1,14 @@
+.custom-nav {
+    background-color: #252323;
+    height: 80px;
+}
+
+.custom-brand {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.custom-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
