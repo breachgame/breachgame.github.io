@@ -11,6 +11,23 @@
   width:80%;
 }
 
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .image-description {
   display: flex;
   padding: 16px;
@@ -20,7 +37,8 @@
 }
 
 .description {
-  font-family: 'roboto', sans-serif;
+  font-family: 'VT323', monospace;
+  font-size: 0.7em;
   color: white;
   margin: 50px;
 }

@@ -1,32 +1,22 @@
 import React from 'react'
+import { CSSTransition } from 'react-transition-group';
 
 const HomeCard = ({description, image, imageLeft}) => {
-  if (imageLeft) {
-    return (
-      <div className={"card-container"}>
-        <div className="home-card">
-            <div className="image-description" >
-              <img src={image}></img>
-              <div className="description-container">
-                <div className="description">{description}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-    )
-  }
+  let descriptionEl = (<div className="description-container">
+                         <div className="description">{description}</div>
+                       </div>);
+  let imageEl = (<img src={image}></img>);
+  let content = imageLeft ? [imageEl, descriptionEl] : [descriptionEl, imageEl];
   return (
-    <div className={"card-container"}>
+    <div className={"card-container fade-in"}>
       <div className="home-card">
-          <div className="image-description" >
-          <div className="description-container">
-            <div className="description">{description}</div>
-          </div>
-            <img src={image}></img>
-          </div>
+        <div className="image-description" >
+          {content}
         </div>
       </div>
+    </div>
   )
+
 }
 
 export default HomeCard;
