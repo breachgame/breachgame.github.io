@@ -25,7 +25,6 @@ const Demo = () => {
 
   useEffect(() => {
     unityContext.on("loaded", () => {
-      console.log("hey")
       setIsLoading(false);
     })
   })
