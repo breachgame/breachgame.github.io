@@ -15,12 +15,12 @@ const team = [
   },
   {
     name: "Johan Wieslander",
-    tasks: ["Programmer"],
+    tasks: ["Programmer", "Feature Development"],
     image: Johan,
   },
   {
     name: "Julien Reboul",
-    tasks: ["Programmer"],
+    tasks: ["Programmer","AI","Game Design"],
     image: Julien,
   },
   {
@@ -39,7 +39,6 @@ const Team = () => {
   return(
     <React.Fragment>
     <div className="container">
-      <div className="page-title">The Team</div>
       <div className="team-container">
       {team.map(member => <Card image={member.image} name={member.name} tasklist={member.tasks}/>)}
       </div>
